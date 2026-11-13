@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE RAZA ESPANOLA</title>
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidhuvudet innehåller webbplatsens titel och navigationsmeny.
+     Menyn gör det möjligt att växla mellan webbplatsens fyra sidor. -->
+    <header>
+        <h1>PURE RAZA ESPANOLA</h1>
+        <p>Kungligt arv: P.R.E. Spaniens stolta nationalhäst.</p>
+        <nav aria-label="Huvudmeny">
+            <ul>         
+         <li><a href="index.html">HEM</a></li>
+         <li><a href="ursprung.html">URSPRUNG</a></li>
+         <li><a href="kanda.html">KÄNDA PREs</a></li>
+         <li><a href="omoss.html">OM OSS</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main id="hem">
+<img src="hemsida.jpg" alt="Gråskimmel av rasen PRE som stegrar sig framför en äldre stenbyggnad." class="hero-image">
+<!-- Introduktionssektionen presenterar hästrasen PRE.
+     Här får besökaren en överblick över webbplatsens innehåll. -->
+       <section class="intro">
+    <h2>Välkommen till PURE RAZA ESPAÑOLA</h2>
+    <p>
+        Lär dig om den spanska hästrasen PRE, som är känd för sin elegans,
+        intelligens och långa historia. Här får du lära dig mer om
+        rasens ursprung, dess egenskaper och några av de hästar
+        som gjort avtryck inom ridsporten.
+    </p>
+</section>
+<!-- Interaktivt bildspel där besökaren kan bläddra
+     mellan tre bilder med hjälp av JavaScript.
+     Knapparna har aria-label för ökad tillgänglighet. -->
+<section class="gallery">
+    <h2>PRE-hästen i bilder</h2>
+
+    <div class="gallery-container">
+       <button id="prev-image" type="button" aria-label="Visa föregående hästbild">
+    Föregående
+</button>
+
+        <img id="gallery-image"
+             src="bildspel1 optimera.jpg"
+             alt="PRE-häst">
+
+        <button id="next-image" type="button" aria-label="Visa nästa hästbild">
+    Nästa
+</button>
+    </div>
+
+    <div class="gallery-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <p id="gallery-caption">Den spanska hästens</p>
+</section>
+
+</main>
+  
+<footer>
+    <p>PURE RAZA ESPAÑOLA</p>
+    <p>Den spanska hästen</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
